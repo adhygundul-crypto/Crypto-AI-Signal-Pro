@@ -1,1 +1,8 @@
-
+fastapi
+uvicorn
+phyton-binance
+pandas 
+numpy
+ta
+requests 
+python-dotenv
