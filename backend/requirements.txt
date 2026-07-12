@@ -1,6 +1,6 @@
 fastapi
 uvicorn
-phyton-binance
+python-binance
 pandas 
 numpy
 ta
