@@ -18,15 +18,22 @@ def generate_signal(data):
         score -= 25
 
     if score >= 75:
-        signal = "STRONG BUY"
-    elif score >= 50:
-        signal = "BUY"
-    elif score <= -50:
-        signal = "SELL"
-    else:
-        signal = "WAIT"
-
     return {
-        "signal": signal,
-        "confidence": abs(score)
+        "signal": "STRONG BUY",
+        "score": score
+    }
+elif score >= 50:
+    return {
+        "signal": "BUY",
+        "score": score
+    }
+elif score <= -50:
+    return {
+        "signal": "SELL",
+        "score": score
+    }
+else:
+    return {
+        "signal": "HOLD",
+        "score": score
     }
